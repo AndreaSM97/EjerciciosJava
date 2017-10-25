@@ -29,7 +29,7 @@ public class MENÚ {
                  + "\n9. Ejercicio 9\n10. Ejercicio 10\n11. Ejercicio 11\n12. Ejercicio 12"
                  + "\n13. Ejercicio 13\n14. Salir");
          System.out.println("Escribe una opcion: ");
-         opcion = sn.nextInt();
+         opcion = sc.nextInt();
          
          switch(opcion){
              case 1:
@@ -80,8 +80,68 @@ public class MENÚ {
      }
     }
     public static void ejercicio1(Scanner sc){
+        //Pedir dos números
+        int num1 = 0;
+        int num2 = 0;
+        
+        
+        System.out.println("Dime el primer número: ");
+        num1= sc.nextInt();
+        System.out.println("Dime el segundo número: ");
+        num2= sc.nextInt();
+        
+       
+        if(num1<num2) { 
+            for(int i=num1++;num1<num2;num1++) 
+            {
+                System.out.println("Los números intermedios son: "+ num1);
+            }
+        } else if(num1==num2){
+            System.out.println("Los números son iguales");
+        } else if(num1>num2){
+            for(int i=num2++;num1>num2;num2++){
+                System.out.println("Los números intermedios son: "+ num2);
+            }
+        }
+    } //Hecho
+    public static void ejercicio2(Scanner sc){
+        //Los veinte primeros múltiplos de 5
+        for(int i=0;i==20;i*5){
+        System.out.println(i);    
+        }
+    }
+    public static void ejercicio3(Scanner sc){
         
     }
-   
+    public static void ejercicio4(Scanner sc){
+        
+    }
+    public static void ejercicio5(Scanner sc){
+        
+    }
+    public static void ejercicio6(Scanner sc){
+        
+    }
+    public static void ejercicio7(Scanner sc){
+        
+    }
+    public static void ejercicio8(Scanner sc){
+        
+    }
+    public static void ejercicio9(Scanner sc){
+        
+    }
+    public static void ejercicio10(Scanner sc){
+        
+    }
+    public static void ejercicio11(Scanner sc){
+        
+    }
+    public static void ejercicio12(Scanner sc){
+        
+    }
+    public static void ejercicio13(Scanner sc){
+        
+    }
     
 }
