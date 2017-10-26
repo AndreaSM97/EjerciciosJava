@@ -187,13 +187,13 @@ public class MENÚ {
         int menor = 0;
         
         
-        for (int i=num;num<10;i++){
+        for (int i=0;i<10;i++){
             System.out.println("Dime un numero: ");
             num= sc.nextInt();
             if (menor!=0&&mayor!=0){
-            if(num>=menor){
+            if(num>mayor){
               menor=num;  
-            }if (num<=mayor){
+            }if (num<menor){
                 mayor=num;
             } else {
                 mayor=num;
