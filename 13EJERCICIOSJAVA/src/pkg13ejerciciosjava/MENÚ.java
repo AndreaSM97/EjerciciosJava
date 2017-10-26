@@ -192,15 +192,15 @@ public class MENÚ {
             num= sc.nextInt();
             if (menor!=0&&mayor!=0){
             if(num>mayor){
-              menor=num;  
+              mayor=num;  
             }if (num<menor){
-                mayor=num;
-            } else {
+                menor=num;
+            } }else {
                 mayor=num;
                 menor=num;
             }
         } 
-        }
+        
         System.out.println("El número mayor es: " +mayor);
         System.out.println("El número menor es: " +menor);
     }
