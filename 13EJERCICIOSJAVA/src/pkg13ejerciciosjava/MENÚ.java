@@ -203,24 +203,159 @@ public class MENÚ {
         
         System.out.println("El número mayor es: " +mayor);
         System.out.println("El número menor es: " +menor);
-    }
+    } //HECHO
     public static void ejercicio8(Scanner sc){
-        
-    }
+        //Pedir número y que nos de su factorial
+        int num;
+        int resultado = 1;
+        System.out.println("Dime un número: ");
+        num= sc.nextInt();
+        for (int i=num;i>0;i--) {
+            resultado=resultado *i;
+        } System.out.println("El factorial de " +num +" es " +resultado);
+    } //HECHO
     public static void ejercicio9(Scanner sc){
+        //3 numeros y que los imprima de mayor a menor
+        int a = 0, b = 0, c = 0;
+        int mayor = 0;
+        int menor = 0;
+        int medio = 0;
         
-    }
+        System.out.println("Dime el primer número: ");
+        a=sc.nextInt();
+        System.out.println("Dime el segundo número: ");
+        b=sc.nextInt();
+        System.out.println("Dime el tercer número: ");
+        c=sc.nextInt();
+        
+        if(a>b&&a>c){
+            mayor=a;
+        }else if(b>a&&b>c){
+            mayor=b;
+        } else {
+            mayor=c;
+        }
+        if(a<b&&a<c){
+            menor=a;
+        } else if(b<a&&b<c){
+            menor=b;
+        } else {
+            menor=c;
+            
+        }  medio=(a+b+c)-(mayor+menor);
+               
+                
+        System.out.println("");
+        System.out.println("El resultado es: ");
+        System.out.println(mayor+ " " +medio+ " " +menor);
+    } //HECHO
     public static void ejercicio10(Scanner sc){
+        //PEDIR NOTA Y SACARLA EN LETRA POR PANTALLA
+        int num;
+        System.out.println("Dime un número del 1 al 10: ");
+        num= sc.nextInt();
+        switch (num) {
+            case 1:
+                System.out.println("Uno");
+                break;
+            case 2:
+                System.out.println("Dos");
+                break;
+            case 3:
+                System.out.println("Tres");
+                break;
+            case 4:
+                System.out.println("Cuatro");
+                break;
+            case 5:
+                System.out.println("Cinco");
+                break;
+            case 6:
+                System.out.println("Seis");
+                break;
+            case 7:
+                System.out.println("Siete");
+                break;
+            case 8:
+                System.out.println("Ocho");
+                break;
+            case 9:
+                System.out.println("Nueve");
+                break;
+            case 10:
+                System.out.println("Diez");
+                break;
+            default:
+                System.out.println("Numero erroneo.");
+                break;
+                
+        }
         
-    }
+    } //HECHO
     public static void ejercicio11(Scanner sc){
-        
-    }
+        //NOTA NÚMERICA Y DE EL EQUIVALENTE
+        int num = 0;
+        System.out.println("Dime la nota: ");
+        num=sc.nextInt();
+        if (num<5){
+            System.out.println("Suspenso");
+        } else if(num==5){
+            System.out.println("Suficiente");
+        }else if(num==6){
+            System.out.println("Bien");
+        } else if(num==7||num==8){
+            System.out.println("Notable");
+        }else if(num==9||num==10){
+            System.out.println("Sobresaliente");
+        }
+    } //HECHO
     public static void ejercicio12(Scanner sc){
+        //NUMERO DE ALUMNOS, NOTA Y SAQUE LA MEDIA Y DIGA APROBADOS Y SUSPENSOS
+        int alumnos;
+        int nota = 0;
+        int media;
+        int aprobado = 0;
+        int suspenso = 0;
+        int suma = 0;
         
-    }
+        System.out.println("Dime cuantos alumnos hay: ");
+        alumnos=sc.nextInt();
+        
+        for(int i=0;i<alumnos;i++){
+            System.out.println("Dime la nota: ");
+            nota=sc.nextInt();
+            suma=suma+nota;
+            if(nota<5){
+               suspenso++;
+            } 
+            else{
+                  aprobado++;
+            suma=suma+nota;
+            }
+        }
+        media=suma/alumnos;
+        System.out.println("La media es: " +media);
+        System.out.println("El numero de aprobados es: " +aprobado);
+        System.out.println("El numero de suspensos es: " +suspenso);
+        
+    } //HECHO
     public static void ejercicio13(Scanner sc){
-        
+       //IMPRIMIR NUMEROS PRIMOS ENTRE 1 Y N, SIENDO N METIDO POR EL USUARIO
+       int desde = 1;
+       int hasta = 0;
+       boolean primo = true;
+       int divisor=2;
+           
+           System.out.println("Dime hasta que número: ");
+           hasta=sc.nextInt();
+           
+       for(int i=hasta;i>=2;i--){
+           if(hasta%i!=0){
+               primo=false;
+           }
+           
+       }
+        System.out.println(primo);
     }
     
 }
