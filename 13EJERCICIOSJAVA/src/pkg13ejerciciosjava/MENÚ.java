@@ -341,21 +341,25 @@ public class MENÚ {
     } //HECHO
     public static void ejercicio13(Scanner sc){
        //IMPRIMIR NUMEROS PRIMOS ENTRE 1 Y N, SIENDO N METIDO POR EL USUARIO
-       int desde = 1;
-       int hasta = 0;
-       boolean primo = true;
-       int divisor=2;
-           
-           System.out.println("Dime hasta que número: ");
-           hasta=sc.nextInt();
-           
-       for(int i=hasta;i>=2;i--){
-           if(hasta%i!=0){
-               primo=false;
-           }
-           
+       int num;
+       int contador=2;
+       boolean esprimo=false;
+       
+       //ME DICE SI UN NUMERO ES PRIMO O NO ES PRIMO
+        System.out.println("Dime el número: ");
+        num=sc.nextInt();
+        if(num%contador != 0 && contador<num){
+            contador++;
+            System.out.println("Es primo");
+        } else {
+            System.out.println("No es primo");
+            
+        }
+        for(int i=num;i>=contador;i++){
+            
+        }
        }
-        System.out.println(primo);
+        
     }
     
-}
+
